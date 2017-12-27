@@ -7264,7 +7264,7 @@ var swiperModules = [
 if (typeof Swiper$1.use !== 'undefined') {
   Swiper$1.use(swiperModules)
 } else {
-  Swiper$1.class.use(swiperModules)
+  Swiper$1.Class.use(swiperModules)
 }
 
 return Swiper$1;
