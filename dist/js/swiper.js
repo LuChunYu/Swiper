@@ -7235,7 +7235,7 @@ var EffectCoverflow = {
 
 // Swiper Class
 // Core Modules
-Swiper$1.use([
+var swiperModules = [
   Device$2,
   Support$2,
   Browser$2,
@@ -7259,7 +7259,13 @@ Swiper$1.use([
   EffectCube,
   EffectFlip,
   EffectCoverflow
-]);
+];
+ 
+if (typeof Swiper$1.use !== 'undefined') {
+  Swiper$1.use(swiperModules)
+} else {
+  Swiper$1.class.use(swiperModules)
+}
 
 return Swiper$1;
 
